@@ -6,7 +6,7 @@ let audio5=new Audio ("Imran-Khan-Satisfya-Official-Music-Video_pfVODjDBFxU.mp3"
 let audio6=new Audio("Gandhi Money - Kohinoor 128 Kbps.mp3")
 let audio7=new Audio("Garmi - Street Dancer 3D.mp3")
 let audio8=new Audio("East Or West.mp3")
-let audio9=new Audio("")
+let audio9=new Audio("Tu_Mera_Bhai_Hai_(Official_Video)_Ravish_Khanna_Ft._Abhishek_Nigam,_Alam_khan___Muzik_Amy___BBR_2020(256k).mp3")
 
 audio.addEventListener("timeupdate", () => {
   document.getElementById("rangebar").value = parseInt(
@@ -235,7 +235,7 @@ document.getElementById("playmini9").addEventListener("click", () => {
     audio9.currentTime = 0;
 
     document.getElementById("play").setAttribute("src", "O2.png");
-    document.getElementById("playmini7").setAttribute("src", "O2.png");
+    document.getElementById("playmini9").setAttribute("src", "O2.png");
   } else {
     audio9.pause();
     document.getElementById("playmini9").setAttribute("src", "p1 copy 7.png");
