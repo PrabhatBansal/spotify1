@@ -56,7 +56,7 @@ audio3.addEventListener("timeupdate", () => {
 
 
 document.getElementById("playmini").addEventListener("click", () => {
-  if (audio.paused && audio2.paused&&audio3.paused) {
+  if (audio.paused && audio2.paused&&audio3.paused&&audio4.paused&&audio5.paused&&audio6.paused&&audio7.paused&&audio8.paused) {
     audio.play();
     audio.currentTime = 0;
 
@@ -80,7 +80,7 @@ document.getElementById("playmini").addEventListener("click", () => {
 });
 
 document.getElementById("playmini2").addEventListener("click", () => {
-    if (audio.paused && audio2.paused&&audio3.paused) {
+    if (audio.paused && audio2.paused&&audio3.paused&&audio4.paused&&audio5.paused&&audio6.paused&&audio7.paused&&audio8.paused) {
       audio2.play();
       audio2.currentTime = 0;
   
@@ -103,7 +103,7 @@ document.getElementById("playmini2").addEventListener("click", () => {
     });
   });
 document.getElementById("playmini3").addEventListener("click", () => {
-  if (audio2.paused && audio.paused&& audio3.paused) {
+  if (audio2.paused && audio.paused&& audio3.paused&&audio4.paused&&audio5.paused&&audio6.paused&&audio7.paused&&audio8.paused) {
     audio3.play();
     audio3.currentTime = 0;
 
@@ -123,7 +123,7 @@ document.getElementById("playmini3").addEventListener("click", () => {
   });
 });
 document.getElementById("playmini4").addEventListener("click", () => {
-  if (audio2.paused && audio.paused&& audio3.paused&&audio4.paused) {
+  if (audio2.paused && audio.paused&& audio3.paused&&audio4.paused&&audio5.paused&&audio6.paused&&audio7.paused&&audio8.paused) {
     audio4.play();
     audio4.currentTime = 0;
 
@@ -143,7 +143,7 @@ document.getElementById("playmini4").addEventListener("click", () => {
   });
 });
 document.getElementById("playmini5").addEventListener("click", () => {
-  if (audio2.paused && audio.paused&& audio3.paused&&audio4.paused&&audio5.paused) {
+  if (audio2.paused && audio.paused&& audio3.paused&&audio4.paused&&audio5.paused&&audio6.paused&&audio7.paused&&audio8.paused) {
     audio5.play();
     audio5.currentTime = 0;
 
@@ -163,7 +163,7 @@ document.getElementById("playmini5").addEventListener("click", () => {
   });
 });
 document.getElementById("playmini6").addEventListener("click", () => {
-  if (audio2.paused && audio.paused&& audio3.paused&&audio4.paused&&audio5.paused&&audio6.paused) {
+  if (audio2.paused && audio.paused&& audio3.paused&&audio4.paused&&audio5.paused&&audio6.paused&&audio7.paused&&audio8.paused) {
     audio6.play();
     audio6.currentTime = 0;
 
@@ -183,7 +183,7 @@ document.getElementById("playmini6").addEventListener("click", () => {
   });
 });
 document.getElementById("playmini8").addEventListener("click", () => {
-  if (audio2.paused && audio.paused&& audio3.paused&&audio4.paused&&audio5.paused&&audio8.paused) {
+  if (audio2.paused && audio.paused&& audio3.paused&&audio4.paused&&audio5.paused&&audio8.paused&&audio7.paused) {
     audio8.play();
     audio8.currentTime = 0;
 
@@ -203,7 +203,7 @@ document.getElementById("playmini8").addEventListener("click", () => {
   });
 });
 document.getElementById("playmini7").addEventListener("click", () => {
-  if (audio2.paused && audio.paused&& audio3.paused&&audio4.paused&&audio5.paused&&audio6.paused&&audio7.paused) {
+  if (audio2.paused && audio.paused&& audio3.paused&&audio4.paused&&audio5.paused&&audio6.paused&&audio7.paused&&audio8.paused) {
     audio7.play();
     audio7.currentTime = 0;
 
