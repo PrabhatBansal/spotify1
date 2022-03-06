@@ -6,6 +6,7 @@ let audio5=new Audio ("Imran-Khan-Satisfya-Official-Music-Video_pfVODjDBFxU.mp3"
 let audio6=new Audio("Gandhi Money - Kohinoor 128 Kbps.mp3")
 let audio7=new Audio("Garmi - Street Dancer 3D.mp3")
 let audio8=new Audio("East Or West.mp3")
+let audio9=new Audio("")
 
 audio.addEventListener("timeupdate", () => {
   document.getElementById("rangebar").value = parseInt(
@@ -53,10 +54,16 @@ audio3.addEventListener("timeupdate", () => {
     );
   }
   );
+audio9.addEventListener("timeupdate", () => {
+    document.getElementById("rangebar").value = parseInt(
+      (audio9.currentTime / audio9.duration) * 100
+    );
+  }
+  );
 
 
 document.getElementById("playmini").addEventListener("click", () => {
-  if (audio.paused && audio2.paused&&audio3.paused&&audio4.paused&&audio5.paused&&audio6.paused&&audio7.paused&&audio8.paused) {
+  if (audio.paused && audio2.paused&&audio3.paused&&audio4.paused&&audio5.paused&&audio6.paused&&audio7.paused&&audio8.paused&&audio9.paused) {
     audio.play();
     audio.currentTime = 0;
 
@@ -80,7 +87,7 @@ document.getElementById("playmini").addEventListener("click", () => {
 });
 
 document.getElementById("playmini2").addEventListener("click", () => {
-    if (audio.paused && audio2.paused&&audio3.paused&&audio4.paused&&audio5.paused&&audio6.paused&&audio7.paused&&audio8.paused) {
+    if (audio.paused&&audio9.paused && audio2.paused&&audio3.paused&&audio4.paused&&audio5.paused&&audio6.paused&&audio7.paused&&audio8.paused) {
       audio2.play();
       audio2.currentTime = 0;
   
@@ -103,7 +110,7 @@ document.getElementById("playmini2").addEventListener("click", () => {
     });
   });
 document.getElementById("playmini3").addEventListener("click", () => {
-  if (audio2.paused && audio.paused&& audio3.paused&&audio4.paused&&audio5.paused&&audio6.paused&&audio7.paused&&audio8.paused) {
+  if (audio2.paused &&audio9.paused&& audio.paused&& audio3.paused&&audio4.paused&&audio5.paused&&audio6.paused&&audio7.paused&&audio8.paused) {
     audio3.play();
     audio3.currentTime = 0;
 
@@ -123,7 +130,7 @@ document.getElementById("playmini3").addEventListener("click", () => {
   });
 });
 document.getElementById("playmini4").addEventListener("click", () => {
-  if (audio2.paused && audio.paused&& audio3.paused&&audio4.paused&&audio5.paused&&audio6.paused&&audio7.paused&&audio8.paused) {
+  if (audio2.paused &&audio9.paused&& audio.paused&& audio3.paused&&audio4.paused&&audio5.paused&&audio6.paused&&audio7.paused&&audio8.paused) {
     audio4.play();
     audio4.currentTime = 0;
 
@@ -143,7 +150,7 @@ document.getElementById("playmini4").addEventListener("click", () => {
   });
 });
 document.getElementById("playmini5").addEventListener("click", () => {
-  if (audio2.paused && audio.paused&& audio3.paused&&audio4.paused&&audio5.paused&&audio6.paused&&audio7.paused&&audio8.paused) {
+  if (audio2.paused&&audio9.paused && audio.paused&& audio3.paused&&audio4.paused&&audio5.paused&&audio6.paused&&audio7.paused&&audio8.paused) {
     audio5.play();
     audio5.currentTime = 0;
 
@@ -163,7 +170,7 @@ document.getElementById("playmini5").addEventListener("click", () => {
   });
 });
 document.getElementById("playmini6").addEventListener("click", () => {
-  if (audio2.paused && audio.paused&& audio3.paused&&audio4.paused&&audio5.paused&&audio6.paused&&audio7.paused&&audio8.paused) {
+  if (audio2.paused  &&audio9.paused&&audio.paused&& audio3.paused&&audio4.paused&&audio5.paused&&audio6.paused&&audio7.paused&&audio8.paused) {
     audio6.play();
     audio6.currentTime = 0;
 
@@ -183,7 +190,7 @@ document.getElementById("playmini6").addEventListener("click", () => {
   });
 });
 document.getElementById("playmini8").addEventListener("click", () => {
-  if (audio2.paused && audio.paused&& audio3.paused&&audio4.paused&&audio5.paused&&audio8.paused&&audio7.paused) {
+  if (audio2.paused &&audio9.paused&& audio.paused&& audio3.paused&&audio4.paused&&audio5.paused&&audio8.paused&&audio7.paused) {
     audio8.play();
     audio8.currentTime = 0;
 
@@ -203,7 +210,7 @@ document.getElementById("playmini8").addEventListener("click", () => {
   });
 });
 document.getElementById("playmini7").addEventListener("click", () => {
-  if (audio2.paused && audio.paused&& audio3.paused&&audio4.paused&&audio5.paused&&audio6.paused&&audio7.paused&&audio8.paused) {
+  if (audio2.paused &&audio9.paused&& audio.paused&& audio3.paused&&audio4.paused&&audio5.paused&&audio6.paused&&audio7.paused&&audio8.paused) {
     audio7.play();
     audio7.currentTime = 0;
 
@@ -219,6 +226,26 @@ document.getElementById("playmini7").addEventListener("click", () => {
       audio7.pause();
       document.getElementById("play").setAttribute("src", "p1 copy 7.png");
       document.getElementById("playmini7").setAttribute("src", "p1 copy 7.png");
+    }
+  });
+});
+document.getElementById("playmini9").addEventListener("click", () => {
+  if (audio2.paused &&audio9.paused&& audio.paused&& audio3.paused&&audio4.paused&&audio5.paused&&audio6.paused&&audio7.paused&&audio8.paused&&audio9.paused) {
+    audio9.play();
+    audio9.currentTime = 0;
+
+    document.getElementById("play").setAttribute("src", "O2.png");
+    document.getElementById("playmini7").setAttribute("src", "O2.png");
+  } else {
+    audio9.pause();
+    document.getElementById("playmini9").setAttribute("src", "p1 copy 7.png");
+    document.getElementById("play").setAttribute("src", "p1 copy 7.png");
+  }
+  document.getElementById("play").addEventListener("click", () => {
+    if (audio9.played&&audio.paused&&audio2.paused) {
+      audio9.pause();
+      document.getElementById("play").setAttribute("src", "p1 copy 7.png");
+      document.getElementById("playmini9").setAttribute("src", "p1 copy 7.png");
     }
   });
 });
